@@ -1,15 +1,12 @@
 import type { Component } from "solid-js";
+import { Layout } from "./components/templates";
+import { Navbar } from "./components/organisms";
 
 const App: Component = () => {
   return (
-    <>
-      <header>
-        Header
-      </header>
-      <main>
-        <h1 class="text-softBlue text-xl font-medium">Hello World</h1>
-      </main>
-    </>
+    <Layout>
+      <Navbar />
+    </Layout>
   );
 };
 

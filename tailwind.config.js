@@ -9,6 +9,9 @@ module.exports = {
         grayishBlue: "hsl(229, 8%, 60%)",
         veryDarkBlue: "hsl(229, 31%, 21%)",
       },
+      fontFamily: {
+        rubik: "Rubik"
+      }
     },
     screens: {
       sm: "375px",
