@@ -6,7 +6,9 @@ const NavList: Component = () => {
     <NavItem>Features</NavItem>,
     <NavItem>Pricing</NavItem>,
     <NavItem>Contact</NavItem>,
-    <Button variant="Secondary">Login</Button>,
+    <Button variant="Secondary" class="!text-xs uppercase tracking-widest">
+      Login
+    </Button>,
   ];
 
   return (

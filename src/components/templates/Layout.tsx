@@ -8,7 +8,7 @@ const Layout: Component<Props> = (props) => {
 
   return (
     <div
-      class={clsx("mx-auto max-w-xs md:max-w-2xl lg:max-w-4xl xl:max-w-6xl", className)}
+      class={clsx("flex flex-col gap-y-12", className)}
       {...rest}
     >
       {children}

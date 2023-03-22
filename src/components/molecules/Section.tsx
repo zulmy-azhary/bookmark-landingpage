@@ -8,7 +8,7 @@ const Section: Component<Props> = (props) => {
 
   return (
     <section
-      class={clsx("mx-auto max-w-xs md:max-w-2xl lg:max-w-4xl xl:max-w-6xl", className)}
+      class={clsx("", className)}
       {...rest}
     >
       {children}
