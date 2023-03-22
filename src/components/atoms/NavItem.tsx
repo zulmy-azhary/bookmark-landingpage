@@ -7,7 +7,7 @@ const NavItem: Component<Props> = (props) => {
   const { class: className, children, ...rest } = props;
 
   return (
-    <a href="#" class={clsx("uppercase text-xs font-medium tracking-widest hover:text-softRed", className)} {...rest}>
+    <a href="#" class={clsx("text-gray-600 uppercase text-xs font-medium tracking-widest hover:text-softRed", className)} {...rest}>
       {children}
     </a>
   );
