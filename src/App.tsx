@@ -1,13 +1,14 @@
 import type { Component } from "solid-js";
 import { Layout } from "./components/templates";
-import { Hero, Navbar } from "./components/organisms";
+import { Features, Hero, Navbar } from "./components/organisms";
 
 const App: Component = () => {
   return (
     <Layout>
       <Navbar />
-      <main>
+      <main class="flex flex-col gap-y-24">
         <Hero />
+        <Features />
       </main>
     </Layout>
   );
