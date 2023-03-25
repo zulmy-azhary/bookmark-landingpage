@@ -11,7 +11,8 @@ const Shape: Component<Props> = (props) => {
     <div
       class={clsx(
         "absolute h-2/3 w-3/5 lg:w-[27.5rem] bg-softBlue bottom-0 -z-10",
-        position === "left" ? "left-0 rounded-r-full" : "right-0 rounded-l-full"
+        position === "left" ? "left-0 rounded-r-full" : "right-0 rounded-l-full",
+        className
       )}
       {...rest}
     />
