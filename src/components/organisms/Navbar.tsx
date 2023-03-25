@@ -13,7 +13,7 @@ const Navbar: Component = () => {
         when={isTablet()}
         fallback={
           <button>
-            <img src={hamburger} />
+            <img src={hamburger} alt="Hamburger menu" />
           </button>
         }
       >
