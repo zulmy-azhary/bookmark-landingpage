@@ -1,7 +1,6 @@
 import { type Component, Show } from "solid-js";
 import { BrandLogo, NavList } from "../molecules";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
-import hamburger from "../../assets/images/icon-hamburger.svg";
 
 const Navbar: Component = () => {
   const isTablet = useMediaQuery("(min-width: 768px)");
@@ -13,7 +12,7 @@ const Navbar: Component = () => {
         when={isTablet()}
         fallback={
           <button>
-            <img src={hamburger} alt="Hamburger menu" />
+            <img src={"/assets/images/icon-hamburger.svg"} alt="Hamburger menu" />
           </button>
         }
       >

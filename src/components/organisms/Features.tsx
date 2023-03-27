@@ -1,5 +1,5 @@
 import { type Component, createSignal } from "solid-js";
-import { FeatureContent, FeatureHeader, FeatureImage, FeatureTab } from "../molecules";
+import { FeatureContent, FeatureImage, FeatureTab, SectionHeader } from "../molecules";
 import type { Feature, FeatureTab as TFeatureTab } from "../../types";
 import { features } from "../../helpers/data";
 
@@ -17,7 +17,11 @@ const Features: Component = () => {
 
   return (
     <section class="flex flex-col gap-y-8">
-      <FeatureHeader />
+      <SectionHeader
+        heading="Features"
+        description="Our aim is to make it quick and easy for you to access your favourite websites. Your
+        bookmarks sync between your devices so you can access them on the go."
+      />
       <FeatureTab tabs={tabs} activeTab={activeTab} tabChange={tabChange} />
       <div class="flex flex-col gap-y-20 md:gap-y-28 items-center min-h-[30rem] lg:flex-row lg:gap-x-12 xl:gap-x-32">
         <FeatureImage class="lg:basis-1/2 xl:basis-full mt-12" selectedFeature={selectedFeature} />

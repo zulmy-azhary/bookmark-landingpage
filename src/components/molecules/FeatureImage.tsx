@@ -17,7 +17,7 @@ const FeatureImage: Component<Props> = (props) => {
     >
       <img
         class="h-48 md:h-64 lg:h-72 xl:h-fit object-contain"
-        src={selectedFeature().image}
+        src={`/assets/images/${selectedFeature().image}.svg`}
         alt="Features image"
       />
       <Shape

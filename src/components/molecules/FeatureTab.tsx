@@ -24,8 +24,8 @@ const FeatureTab: Component<Props> = (props) => {
             class={clsx(
               "cursor-pointer text-veryDarkBlue px-12 py-6 border-b-[1px] relative",
               item === activeTab()
-                ? "after:absolute after:h-[3px] after:bg-softRed after:bottom-0 after:inset-x-0 font-medium"
-                : "opacity-75 hover:text-softRed"
+                ? "after:absolute after:h-[3px] after:bg-softRed after:bottom-0 after:inset-x-0"
+                : "opacity-70 hover:text-softRed"
             )}
             onClick={() => tabChange(item)}
             data-index={idx()}
