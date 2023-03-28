@@ -7,3 +7,10 @@ export type Feature = {
   description: string;
   image: string;
 };
+
+export type Extension = {
+  id: number;
+  image: string;
+  title: string;
+  version: number;
+};

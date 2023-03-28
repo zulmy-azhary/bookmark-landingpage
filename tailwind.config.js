@@ -11,6 +11,9 @@ module.exports = {
       },
       fontFamily: {
         rubik: "Rubik"
+      },
+      backgroundImage: {
+        dots: "url('/assets/images/bg-dots.svg')",
       }
     },
     screens: {
