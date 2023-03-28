@@ -6,7 +6,7 @@ const App: Component = () => {
   return (
     <Layout>
       <Navbar />
-      <main class="flex flex-col gap-y-24">
+      <main class="flex flex-col gap-y-40 md:gap-y-24">
         <Hero />
         <Features />
         <Extension />
