@@ -1,6 +1,6 @@
 import type { Component } from "solid-js";
 import { Layout } from "./components/templates";
-import { Extension, Features, Hero, Navbar } from "./components/organisms";
+import { Extension, FAQ, Features, Hero, Navbar } from "./components/organisms";
 
 const App: Component = () => {
   return (
@@ -10,6 +10,7 @@ const App: Component = () => {
         <Hero />
         <Features />
         <Extension />
+        <FAQ />
       </main>
     </Layout>
   );
