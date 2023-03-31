@@ -14,3 +14,9 @@ export type Extension = {
   title: string;
   version: number;
 };
+
+export type FAQ = {
+  id: number;
+  title: string;
+  description: string;
+}
