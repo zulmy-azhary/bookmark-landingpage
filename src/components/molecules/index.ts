@@ -7,3 +7,4 @@ export { default as FeatureTab } from "./FeatureTab";
 export { default as FeatureImage } from "./FeatureImage";
 export { default as FeatureContent } from "./FeatureContent";
 export { default as ExtensionCard } from "./ExtensionCard";
+export { default as Accordion } from "./Accordion";
