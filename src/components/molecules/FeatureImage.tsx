@@ -1,10 +1,10 @@
-import { Component, JSX } from "solid-js";
-import { Shape } from "../atoms";
-import { Feature } from "../../types";
+import type { Accessor, Component, JSX } from "solid-js";
+import type { Feature } from "../../types";
 import clsx from "clsx";
+import { Shape } from "../atoms";
 
 interface Props extends JSX.HTMLAttributes<HTMLDivElement> {
-  selectedFeature: () => Pick<Feature, "image">;
+  selectedFeature: Accessor<Pick<Feature, "image">>;
 }
 
 const FeatureImage: Component<Props> = (props) => {

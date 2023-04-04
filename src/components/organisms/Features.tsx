@@ -19,8 +19,7 @@ const Features: Component = () => {
     <section class="flex flex-col gap-y-8">
       <SectionHeader
         heading="Features"
-        description="Our aim is to make it quick and easy for you to access your favourite websites. Your
-        bookmarks sync between your devices so you can access them on the go."
+        description="Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go."
       />
       <FeatureTab tabs={tabs} activeTab={activeTab} tabChange={tabChange} />
       <div class="flex flex-col gap-y-20 md:gap-y-28 items-center min-h-[30rem] lg:flex-row lg:gap-x-12 xl:gap-x-32">

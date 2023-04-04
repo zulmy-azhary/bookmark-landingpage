@@ -1,10 +1,10 @@
-import type { Component, JSX } from "solid-js";
+import type { Accessor, Component, JSX } from "solid-js";
 import type { Feature } from "../../types";
 import clsx from "clsx";
 import { Button, Description, Heading } from "../atoms";
 
 interface Props extends JSX.HTMLAttributes<HTMLDivElement> {
-  selectedFeature: () => Omit<Feature, "name" | "image">;
+  selectedFeature: Accessor<Omit<Feature, "name" | "image">>;
 }
 
 const FeatureContent: Component<Props> = (props) => {
