@@ -1,12 +1,12 @@
 import clsx from "clsx";
-import { Component, JSX } from "solid-js";
+import type { Component, JSX } from "solid-js";
 
 interface Props extends JSX.ButtonHTMLAttributes<HTMLButtonElement> {
   variant: "Primary" | "Secondary" | "Accent";
 }
 
 const Button: Component<Props> = (props) => {
-  const { children, variant, class: className, ...rest } = props;
+  const { children = "Default Text", variant, class: className, ...rest } = props;
 
   return (
     <button

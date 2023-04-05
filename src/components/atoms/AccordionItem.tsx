@@ -1,5 +1,5 @@
-import { Accessor, Component, JSX, Setter, Show } from "solid-js";
-import { FAQ } from "../../types";
+import { type Accessor, type Component, type JSX, type Setter, Show } from "solid-js";
+import type { FAQ } from "../../types";
 import clsx from "clsx";
 
 interface Props extends JSX.HTMLAttributes<HTMLDivElement> {
