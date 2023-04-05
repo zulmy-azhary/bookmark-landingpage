@@ -10,7 +10,7 @@ const Logo: Component<Props> = (props) => {
       width="148"
       height="25"
       xmlns="http://www.w3.org/2000/svg"
-      class={className ?? "#242A45"}
+      class={className ?? "fill-[#242A45]"}
       {...rest}
     >
       <path
