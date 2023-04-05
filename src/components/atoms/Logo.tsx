@@ -1,9 +1,13 @@
 import type { Component, JSX } from "solid-js";
 
-type Props = JSX.SvgSVGAttributes<SVGSVGElement>;
+interface Props extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  circleFill?: string;
+  pathFill?: string;
+  pathFillOpacity?: number;
+}
 
 const Logo: Component<Props> = (props) => {
-  const { class: className, ...rest } = props;
+  const { circleFill, pathFill, pathFillOpacity, class: className, ...rest } = props;
 
   return (
     <svg
@@ -18,8 +22,12 @@ const Logo: Component<Props> = (props) => {
         fill-rule="nonzero"
       />
       <g>
-        <circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5" />
-        <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#FFF" />
+        <circle fill={circleFill ?? "#5267DF"} cx="12.5" cy="12.5" r="12.5" />
+        <path
+          d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z"
+          fill={pathFill ?? "#FFF"}
+          fill-opacity={pathFillOpacity}
+        />
       </g>
     </svg>
   );
