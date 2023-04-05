@@ -16,14 +16,21 @@ const AccordionItem: Component<Props> = (props) => {
 
   return (
     <div
-      class="group text-center md:text-start relative before:absolute after:absolute before:top-0 after:bottom-0 before:h-[1px] before:inset-x-0 after:h-[1px] after:inset-x-0 before:bg-gray-200 after:bg-gray-200 before:-translate-y-[1px]"
+      class="group text-start relative before:absolute after:absolute before:top-0 after:bottom-0 before:h-[1px] before:inset-x-0 after:h-[1px] after:inset-x-0 before:bg-gray-200 after:bg-gray-200 before:-translate-y-[1px]"
       {...rest}
     >
       <div
-        class="cursor-pointer py-4 flex justify-between items-center pr-4"
+        class="cursor-pointer py-4 flex justify-between items-center md:pr-4"
         onClick={() => handleIdx(faq.id)}
       >
-        <h1 class={clsx("text-lg", focusIdx() ? "" : "group-hover:text-softRed")}>{faq.title}</h1>
+        <h1
+          class={clsx(
+            "text-sm md:text-lg font-medium md:font-normal text-veryDarkBlue tracking-tight md:tracking-normal",
+            focusIdx() ? "" : "group-hover:text-softRed"
+          )}
+        >
+          {faq.title}
+        </h1>
         <img
           src={"/assets/images/icon-arrow.svg"}
           alt="arrow icon"
