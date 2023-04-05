@@ -1,9 +1,12 @@
-import type { Component } from "solid-js";
+import type { Component, JSX } from "solid-js";
 import { Logo } from "../atoms";
 
-const BrandLogo: Component = () => {
+type Props = JSX.AnchorHTMLAttributes<HTMLAnchorElement>;
+
+const BrandLogo: Component<Props> = (props) => {
+  const { class: className, ...rest } = props;
   return (
-    <a href="/">
+    <a href="/" class={className} {...rest}>
       <Logo class="cursor-pointer" />
     </a>
   );

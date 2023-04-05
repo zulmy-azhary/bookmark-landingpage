@@ -2,7 +2,7 @@ import clsx from "clsx";
 import type { Component, JSX } from "solid-js";
 
 interface Props extends JSX.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant: "Primary" | "Secondary" | "Accent";
+  variant: "Primary" | "Secondary" | "Accent" | "ActiveNav";
 }
 
 const Button: Component<Props> = (props) => {
@@ -15,6 +15,7 @@ const Button: Component<Props> = (props) => {
         variant === "Primary" && "border-softBlue bg-softBlue text-white hover:text-softBlue",
         variant === "Secondary" && "border-softRed bg-softRed text-white hover:text-softRed",
         variant === "Accent" && "border-gray-100 bg-gray-100 text-gray-600 hover:border-gray-600",
+        variant === "ActiveNav" && "border-white bg-transparent text-white hover:text-gray-600",
         className
       )}
       {...rest}
