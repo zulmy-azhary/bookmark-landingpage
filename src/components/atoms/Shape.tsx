@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { Component, JSX } from "solid-js";
+import type { Component, JSX } from "solid-js";
 
 interface Props extends JSX.HTMLAttributes<HTMLDivElement> {
   position: "left" | "right";

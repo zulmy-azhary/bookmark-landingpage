@@ -1,5 +1,5 @@
-import { Component, JSX } from "solid-js";
-import { Extension } from "../../types";
+import type { Component, JSX } from "solid-js";
+import type { Extension } from "../../types";
 import { Button, Description } from "../atoms";
 import clsx from "clsx";
 
